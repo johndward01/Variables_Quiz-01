@@ -1,18 +1,19 @@
 ﻿using System;
 using System.Diagnostics;
 
-namespace Variables_Quiz01
+namespace Variables_Quiz_01
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello!  This will be an exerecise in Variable Declaration and Initialization!");
-            Console.WriteLine();
+            Console.WriteLine("Hello!\nThis will be an exerecise in Variable Declaration and Initialization!");
+            AddSpaces(1);
             Console.WriteLine("Try to get the lowest possible score. . .");
-            Console.WriteLine();
-            Console.Write("Hit any key to begin the quiz and start the timer: "); Console.ReadLine();
-            Console.WriteLine();
+            AddSpaces(1);
+            Console.Write("Press ENTER to begin the quiz and start the timer: "); 
+            Console.ReadLine();
+            AddSpaces(1);
 
             Stopwatch sw = Stopwatch.StartNew();
 
@@ -37,7 +38,7 @@ namespace Variables_Quiz01
                 if (guess == answer1)
                 {
                     Console.WriteLine("Correct!");
-                    Console.WriteLine();
+                    AddSpaces(1);
                 }
                 else
                 {
@@ -54,7 +55,7 @@ namespace Variables_Quiz01
                 if (guess == answer2)
                 {
                     Console.WriteLine("Correct!");
-                    Console.WriteLine();
+                    AddSpaces(1);
                 }
                 else
                 {
@@ -71,7 +72,7 @@ namespace Variables_Quiz01
                 if (guess == answer3)
                 {
                     Console.WriteLine("Correct!");
-                    Console.WriteLine();
+                    AddSpaces(1);
                 }
                 else
                 {
@@ -88,7 +89,7 @@ namespace Variables_Quiz01
                 if (guess == answer4)
                 {
                     Console.WriteLine("Correct!");
-                    Console.WriteLine();
+                    AddSpaces(1);
                 }
                 else
                 {
@@ -105,7 +106,7 @@ namespace Variables_Quiz01
                 if (guess == answer5)
                 {
                     Console.WriteLine("Correct!");
-                    Console.WriteLine();
+                    AddSpaces(1);
                 }
                 else
                 {
@@ -122,7 +123,7 @@ namespace Variables_Quiz01
                 if (guess == answer6)
                 {
                     Console.WriteLine("Correct!");
-                    Console.WriteLine();
+                    AddSpaces(1);
                 }
                 else
                 {
@@ -139,7 +140,7 @@ namespace Variables_Quiz01
                 if (guess == answer7)
                 {
                     Console.WriteLine("Correct!");
-                    Console.WriteLine();
+                    AddSpaces(1);
                 }
                 else
                 {
@@ -156,7 +157,7 @@ namespace Variables_Quiz01
                 if (guess == answer8)
                 {
                     Console.WriteLine("Correct!");
-                    Console.WriteLine();
+                    AddSpaces(1);
                 }
                 else
                 {
@@ -173,7 +174,7 @@ namespace Variables_Quiz01
                 if (guess == answer9)
                 {
                     Console.WriteLine("Correct!");
-                    Console.WriteLine();
+                    AddSpaces(1);
                 }
                 else
                 {
@@ -193,6 +194,15 @@ namespace Variables_Quiz01
             Console.WriteLine("Your Score:");
             Console.WriteLine(score);
             Console.ReadLine();
+        }
+
+        public static void AddSpaces(int numberOfSpaces)
+        {
+            while (numberOfSpaces > 0)
+            {
+                Console.WriteLine();
+                --numberOfSpaces;
+            }
         }
 
     }
